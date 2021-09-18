@@ -1,0 +1,44 @@
+.content {
+   margin: auto;
+   width: 95%;
+   @include respond-to('medium'){
+   width: 80%;
+ }
+}
+
+
+
+.news__post {
+    width: 210px;
+    display: inline-block;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.news__content {
+    img{
+      width: 210px;
+      height: 300px;
+    }
+p {
+      padding: 5px 10px;
+  }
+}
+
+.sidebar {
+  display: none;
+  @include respond-to('medium'){
+    display: block;
+    padding: 0 2rem;
+
+    &__about {
+      width: 100%;
+    }
+      &__pinned {
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
